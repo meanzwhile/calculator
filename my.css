@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    color: crimson;
+    margin-bottom: 50px;
+}
+#calculator {
+    float: left;
+    text-align: center;
+    border: 5px solid crimson;
+    border-radius: 25px;
+    background: beige;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+}
+#screen {
+    height: 30px;
+    width: 200px;
+    float: right;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: #73AD21;
+    padding: 0 10px;
+}
+#clear, #result, .keys span{
+    float: left;
+	position: relative;
+    width: 60px;
+	height: 40px;
+    border: 3px outset #555555;
+    border-radius: 5px;
+	text-align: center;
+    line-height: 40px;
+	background: crimson;
+}
+.keys span{
+    margin: 5px;
+    float: right;
+	position: relative;
+	background: turquoise;
+}
+#clear:hover, #result:hover, .keys span:hover {
+    border: 3px inset #555555;
+}
+#loader {
+    display: none;
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid crimson;
+    border-bottom: 16px solid crimson;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+}
+#cal {
+    display: none;
+    margin: auto;
+    color: crimson;
+    font-size: 50px;
+}
